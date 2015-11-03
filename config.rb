@@ -36,9 +36,9 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -46,6 +46,10 @@
 #     "Helping"
 #   end
 # end
+
+# Use relative URLs
+activate :relative_assets
+set :relative_links, true
 
 set :css_dir, 'stylesheets'
 
@@ -63,9 +67,6 @@ configure :build do
 
   # Enable cache buster
   # activate :asset_hash
-
-  # Use relative URLs
-  # activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
