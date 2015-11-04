@@ -1,0 +1,31 @@
+.home-hero {
+	text-align: center;
+	padding:105px 0 65px 0;
+	background: url('../images/stoneridge-shopping-center-16.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  .container {
+  	position: relative;
+  	z-index: 2;
+  }
+  .button {
+    margin-top: 25px;
+  }
+  h1 {
+    font-family: $sans-serif;
+    font-weight: 300;
+  }
+	@media (min-width:991px) {
+		padding: 185px 0 120px 0;
+    h1 {
+      font-size: 48px;
+    }
+    .u-button {
+      margin-top: 35px;
+    }
+	}
+}

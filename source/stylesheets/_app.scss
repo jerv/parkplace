@@ -1,3 +1,68 @@
+$red: #BF1D1D !global;
+$poop-brown: #8D5A19 !global;
+$brown:#735821 !global;
+$tan:#E3C282 !global;
+$grey: #292828 !global;
+
+$sans-serif:'Josefin Sans', sans-serif !global;
+$serif:'Old Standard TT', serif !global;
+
+
 @import 'vendor/0-dir';
 @import 'modules/0-dir';
 @import 'layouts/0-dir';
+
+/* BASE RULES */
+
+body {
+	font-family:$sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+	font-family:$serif;
+}
+
+/* UTILITIES */
+
+.u-screen {
+	background-color: rgba(0,0,0,0.5);
+	display: block;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+
+.u-button {
+	display: inline-block;
+	cursor: pointer;
+	height: 40px;
+	line-height: 44px;
+	padding: 0 15px;
+	text-align: center;
+	color: rgba(250,250,250,0.8);
+	font-weight: 300;
+	font-style: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: $grey;
+	transition: all 0.2s ease-out;
+	&.block {
+		display: block;
+		margin:0 auto;
+		width: 100%;
+		max-width: 240px;
+	}
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+		background-color: lighten($grey, 5);
+	}
+	&.red {
+		background-color: rgba(191, 29, 29, 0.8);
+		&:hover {
+			background-color: lighten($red, 5);
+		}
+	}
+}
