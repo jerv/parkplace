@@ -2,10 +2,170 @@
 title: Park Place Shopping Center
 ---
 
-<div class="home-hero">
+<div class="l-home-hero">
 	<div class="container">
 		<h1>Great Stores. Better Living.</h1>
 		<%= link_to 'Directory', 'directory.html', :class=>'u-button red' %>
 	</div>
 	<div class="u-screen">&nbsp;</div>
 </div>
+
+<div class="l-home-clients">
+	<div class="container">
+		<div class="clients-slick">
+			<div><%= image_tag 'images/clients/daily-black.png'%></div>
+			<div><%= image_tag 'images/clients/gb3-black.png'%></div>
+			<div><%= image_tag 'images/clients/eureka-black.png'%></div>
+			<div><%= image_tag 'images/clients/deli-black.png'%></div>
+			<div><%= image_tag 'images/clients/daily-black.png'%></div>
+			<div><%= image_tag 'images/clients/gb3-black.png'%></div>
+			<div><%= image_tag 'images/clients/eureka-black.png'%></div>
+			<div><%= image_tag 'images/clients/deli-black.png'%></div>
+		</div>
+	</div>
+</div>
+
+<div class="l-home-splash-1">
+	<div class="container">
+		<div class="row">
+		  <div class="row-md-height">
+		    <div class="col-xs-12 col-md-6 col-md-height col-md-middle">
+		      <div class="inside">
+		        <div class="content">
+		        	<h3 class="red">Great Stories</h3>
+		        	<p>
+		        		Lorem ipsum Quis in veniam aliqua ut dolor in ullamco id sit aliquip irure Excepteur anim Excepteur sunt amet.
+		        	</p>
+		        	<div class="row">
+		        		<div class="col-xs-12 col-sm-6">	
+		        			<%= link_to 'Enter', 'javascript:void(0);', :class=>'u-button red' %>
+		        		</div>
+		        		<div class="col-xs-12 col-sm-6">	
+		        			<%= link_to 'Share', 'javascript:void(0);', :class=>'u-button red trans' %>
+		        		</div>
+		        	</div>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col-xs-12 col-md-6 col-md-height col-md-middle">
+		      <div class="inside">
+		        <div class="content">
+		        	<h3 class="brown">Great Stories</h3>
+		        	<p>
+		        		Lorem ipsum Quis in veniam aliqua ut dolor in ullamco id sit aliquip irure Excepteur anim Excepteur sunt amet.
+		        	</p>
+		        	<%= link_to 'Enter', 'javascript:void(0);', :class=>'u-button brown' %>
+		        </div>
+		      </div>
+		    </div>
+		   </div>
+		</div>
+	</div>
+</div>
+
+<div class="l-home-splash-2">
+	<div class="u-screen brown">&nbsp;</div>
+	<div class="container">
+		<h2><i class="fa fa-quote-left"></i>Park Place is my new favorite shopping location. Well worth a visit if you like to get pampered and have great food.<i class="fa fa-quote-right"></i></h2>
+	</div>
+</div>
+
+<div id="map_canvas"></div>
+
+<div class="l-home-splash-3">
+	<div class="u-screen white">&nbsp;</div>
+	<div class="container">
+		<p>
+			Lorem ipsum Aliqua fugiat quis exercitation cillum veniam id Ut in aliqua magna aute dolore proident anim Duis laborum sint quis ut Excepteur nostrud ad sit dolor est occaecat exercitation quis cupidatat aliquip consectetur culpa. Lorem ipsum Aliqua fugiat quis exercitation cillum veniam id Ut in aliqua magna aute dolore proident anim Duis.
+		</p>
+	</div>
+	<div class="red">
+		<div class="container">
+			<h2>Leasing Opportunities</h2>
+			<%= link_to 'View Availability', 'contact.html', :class=>"u-button trans-white" %>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.clients-slick').slick({
+      autoplay: true,
+      mobileFirst: true,
+      slidesToShow: 4,
+      prevArrow: '<i class="fa fa-chevron-left"></i>',
+      nextArrow: '<i class="fa fa-chevron-right"></i>'
+    });
+  });
+</script>
+
+<!--
+Add the code below to the bottom of your page, just before the closing </body> tag.
+Edit myLatlng and the other variables.
+
+Find syntax for Features that can be styled here:
+
+https://developers.google.com/maps/documentation/javascript/reference#MapTypeStyleFeatureType
+
+Or use a service such as:
+
+http://software.stadtwerk.org/google_maps_colorizr/#
+http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
+https://developers.google.com/maps/documentation/javascript/tutorial
+-->
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+  var bittersMap = (function () {
+    var myLatlng = new google.maps.LatLng(6.851020, 18.057340),
+        mapCenter = new google.maps.LatLng(6.851020, 18.057340),
+        mapCanvas = document.getElementById('map_canvas'),
+        mapOptions = {
+          center: mapCenter,
+          zoom: 7,
+          scrollwheel: false,
+          draggable: true,
+          disableDefaultUI: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        },
+        map = new google.maps.Map(mapCanvas, mapOptions),
+        contentString =
+          '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">thoughtbot</h1>'+
+          '<div id="bodyContent"'+
+          '<p>Sveavägen 98</p>'+
+          '</div>'+
+          '</div>',
+        infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          maxWidth: 300
+        }),
+        marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'thoughtbot (Sweden)'
+        });
+
+    return {
+      init: function () {
+        map.set('styles', [{
+          featureType: 'landscape',
+          elementType: 'geometry',
+          stylers: [
+            { hue: '#ffff00' },
+            { saturation: 30 },
+            { lightness: 10}
+          ]}
+        ]);
+
+        google.maps.event.addListener(marker, 'click', function () {
+          infowindow.open(map,marker);
+        });
+      }
+    };
+  }());
+
+  bittersMap.init();
+</script>

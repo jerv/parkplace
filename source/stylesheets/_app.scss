@@ -18,8 +18,19 @@ body {
 	font-family:$sans-serif;
 }
 
+p {
+	font-size: 16px;
+	line-height:1.5;
+}
+
 h1,h2,h3,h4,h5 {
 	font-family:$serif;
+	&.red {
+		color: $red;
+	}
+	&.brown {
+		color: $brown;
+	}
 }
 
 /* UTILITIES */
@@ -32,22 +43,31 @@ h1,h2,h3,h4,h5 {
 	left:0;
 	width: 100%;
 	height: 100%;
+	&.brown {
+		background-color: $poop-brown;
+		opacity: 0.8;
+	}
+	&.white {
+		background-color: #fff;
+		opacity: 0.9;
+	}
 }
 
 .u-button {
 	display: inline-block;
 	cursor: pointer;
-	height: 40px;
-	line-height: 44px;
+	height: 42px;
+	line-height: 46px;
 	padding: 0 15px;
 	text-align: center;
 	color: rgba(250,250,250,0.8);
 	font-weight: 300;
 	font-style: none;
-	font-size: 18px;
+	font-size: 16px;
 	text-transform: uppercase;
 	background-color: $grey;
 	transition: all 0.2s ease-out;
+	border-radius: 3px;
 	&.block {
 		display: block;
 		margin:0 auto;
@@ -59,10 +79,47 @@ h1,h2,h3,h4,h5 {
 		text-decoration: none;
 		background-color: lighten($grey, 5);
 	}
+	&:active {
+		text-decoration: none;
+	}
 	&.red {
-		background-color: rgba(191, 29, 29, 0.8);
+		background-color: $red;
 		&:hover {
 			background-color: lighten($red, 5);
+		}
+		&.trans {
+			background: none;
+			font-weight: bold;
+			color: $red;
+			box-shadow: 0 0 0 2px $red inset;
+			&:hover {
+				background-color:rgba(250,250,250,0.6);
+				box-shadow: 0 0 0 2px lighten($red, 5) inset;
+			}
+		}
+	}
+	&.brown {
+		background-color: $brown;
+		&:hover {
+			background-color: lighten($brown, 5);
+		}
+		&.trans {
+			background: none;
+			font-weight: bold;
+			color: $brown;
+			box-shadow: 0 0 0 2px $brown inset;
+			&:hover {
+				background-color:rgba(250,250,250,0.6);
+				box-shadow: 0 0 0 2px lighten($brown, 5) inset;
+			}
+		}
+	}
+	&.trans-white {
+		color: #fff;
+		background: none;
+		box-shadow: 0 0 0 2px #fff inset;
+		&:hover {
+			background-color:rgba(250,250,250,0.2);
 		}
 	}
 }

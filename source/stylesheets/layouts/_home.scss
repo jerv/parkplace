@@ -1,4 +1,4 @@
-.home-hero {
+.l-home-hero {
 	text-align: center;
 	padding:105px 0 65px 0;
 	background: url('../images/stoneridge-shopping-center-16.jpg') no-repeat center center fixed; 
@@ -12,8 +12,9 @@
   	position: relative;
   	z-index: 2;
   }
-  .button {
+  .u-button.red {
     margin-top: 25px;
+    background-color: rgba(191, 29, 29, 0.8);
   }
   h1 {
     font-family: $sans-serif;
@@ -28,4 +29,110 @@
       margin-top: 35px;
     }
 	}
+}
+
+.l-home-clients {
+  background-color: #eee;
+  img {
+    max-width: 100%;
+  }
+}
+
+.l-home-splash-1 {
+  text-align: center;
+  h3 {
+    font-size: 32px;
+    margin:0 0 15px 0;
+  }
+  p {
+    max-width: 240px;
+    margin: 0 auto 25px auto;
+  }
+  .u-button {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    margin:10px auto 0 auto;
+  }
+  .col-md-6 {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .col-md-6:last-of-type {
+    background: url('../images/shop_trans.png');
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+  }
+  .container {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
+.l-home-splash-2 {
+  position: relative;
+  text-align: center;
+  padding: 65px 0;
+  background: url('../images/casual-dining-makeover.jpg');
+  background-size: 100% auto;
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  h2 {
+    font-size: 28px;
+    font-family: $sans-serif;
+    font-weight: 300;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 720px;
+    padding:0 35px;
+    position: relative;
+    i {
+      position: absolute;
+      top: 25%;
+      font-size: 24px;
+      font-weight: normal;
+      &:first-of-type {
+        left:0;
+      }
+      &:last-of-type {
+        right: 0;
+      }
+    }
+  }
+  @media (min-width:991px) {
+    padding: 90px 0;
+  }
+}
+
+.l-home-splash-3 {
+  position: relative;
+  text-align: center;
+  background: url('../images/splash-3.png');
+  background-size: 100% auto;
+  p {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 65px 0;
+  }
+  .red {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    padding: 15px 0;
+    background-color: rgba(191, 29, 29, 0.8);
+    .u-button {
+      margin: 15px auto;
+    }
+  }
+  @media (min-width:991px) {
+    p { 
+      padding: 90px 0;
+    }
+  }
 }
