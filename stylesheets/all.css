@@ -3693,6 +3693,35 @@ nav {
   /* line 192, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
   nav .upper ul li > a {
     font-family: "Josefin Sans", sans-serif; } }
+/* line 1, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+footer {
+  text-align: center;
+  background-color: #292828;
+  color: #fff; }
+  /* line 5, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+  footer a {
+    color: inherit;
+    display: block;
+    transition: all 0.2s ease-out; }
+  /* line 10, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+  footer ul {
+    list-style-type: none;
+    padding: 0; }
+    /* line 13, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+    footer ul a {
+      line-height: 1.7;
+      font-size: 16px;
+      color: rgba(250, 250, 250, 0.7);
+      border-radius: 3px;
+      font-weight: 300; }
+      /* line 19, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+      footer ul a:hover {
+        background-color: rgba(250, 250, 250, 0.1); }
+  /* line 24, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+  footer p {
+    color: rgba(250, 250, 250, 0.2);
+    margin-top: 25px; }
+
 /* line 1, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
 .l-home-hero {
   text-align: center;
