@@ -1,0 +1,28 @@
+footer {
+	text-align: center;
+	background-color: $grey;
+	color: #fff;
+	a {
+		color: inherit;
+		display: block;
+		transition: all 0.2s ease-out;
+	}
+	ul {
+		list-style-type: none;
+		padding:0;
+		a {
+			line-height: 1.7;
+			font-size: 16px;
+			color: rgba(250,250,250,0.7);
+			border-radius: 3px;
+			font-weight: 300;
+			&:hover {
+				background-color: rgba(250,250,250,0.1);
+			}
+		}
+	}
+	p {
+		color: rgba(250,250,250,0.2);
+		margin-top: 25px;
+	}
+}
