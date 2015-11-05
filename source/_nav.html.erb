@@ -1,25 +1,29 @@
 <nav>
+	<i class="fa fa-bars nav-trigger"></i>
+	<%= link_to 'Button', 'contact.html', :class=>'nav-cta' %>
 	<section class="upper">
 		<div class="container">
 			<% link_to '/', :class=>'site-id' do %>
 				<h2>Park Place</h2>
 			<% end %>
-			<ul>
-				<li>
-					<%= link_to 'Directory', 'directory.html'%>
-					<ul>
-						<li><%= link_to 'Health &amp; Beauty', 'javascript:void(0);'%></li>
-						<li><%= link_to 'Cuisine', 'javascript:void(0);'%></li>
-						<li><%= link_to 'Fashion', 'javascript:void(0);'%></li>
-						<li><%= link_to 'Services', 'javascript:void(0);'%></li>
-						<li><%= link_to 'Offices', 'javascript:void(0);'%></li>
-					</ul>
-				</li>
-				<li><%= link_to 'Events', 'events.html'%></li>
-				<li><%= link_to 'Sales', 'sales.html'%></li>
-				<li><%= link_to 'Location', 'location.html'%></li>
-				<li><%= link_to 'Contact', 'contact.html'%></li>
-			</ul>
-		</div>
+			<section class="mobile-table">
+				<ul>
+					<li>
+						<%= link_to 'Directory', 'directory.html'%>
+						<ul>
+							<li><%= link_to 'Health &amp; Beauty', 'javascript:void(0);'%></li>
+							<li><%= link_to 'Cuisine', 'javascript:void(0);'%></li>
+							<li><%= link_to 'Fashion', 'javascript:void(0);'%></li>
+							<li><%= link_to 'Services', 'javascript:void(0);'%></li>
+							<li><%= link_to 'Offices', 'javascript:void(0);'%></li>
+						</ul>
+					</li>
+					<li><%= link_to 'Events', 'events.html'%></li>
+					<li><%= link_to 'Sales', 'sales.html'%></li>
+					<li><%= link_to 'Location', 'location.html'%></li>
+					<li><%= link_to 'Contact', 'contact.html'%></li>
+				</ul>
+			</div>
+		</section>
 	</section>
 </nav>
