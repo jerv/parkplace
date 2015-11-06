@@ -81,28 +81,6 @@
     position: relative;
     z-index: 2;
   }
-  h2 {
-    font-size: 28px;
-    font-family: $sans-serif;
-    font-weight: 300;
-    color: #fff;
-    margin: 0 auto;
-    max-width: 720px;
-    padding:0 35px;
-    position: relative;
-    i {
-      position: absolute;
-      top: 25%;
-      font-size: 24px;
-      font-weight: normal;
-      &:first-of-type {
-        left:0;
-      }
-      &:last-of-type {
-        right: 0;
-      }
-    }
-  }
   @media (min-width:991px) {
     padding: 90px 0;
   }

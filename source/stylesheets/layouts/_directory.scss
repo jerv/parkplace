@@ -1,0 +1,85 @@
+.l-dir-hero {
+	background:url('../images/dining2.jpg') no-repeat top center fixed; 
+	-webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+	position: relative;
+	padding: 85px 0 45px 0;
+	text-align: center;
+	@media (min-width:991px) {
+		padding: 140px 0 70px 0;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+	}
+}
+
+.l-filters {
+	h3 {
+		text-align: center;
+		margin:0 0 20px 0;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+		li {
+			margin-bottom: 10px;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+		a {
+			display: block;
+			border-radius: 5px;
+			box-shadow:0 0 0 1px $tan inset;
+			text-align: center;
+			font-weight: 300;
+			font-size: 16px;
+			height: 40px;
+			line-height: 45px;
+			color: $tan;
+			&:hover, &:active {
+				box-shadow:0 0 0 1px darken($tan, 5) inset;
+				color: darken($tan, 5);
+				text-decoration: none;
+			}
+			&.active {
+				color: #fff;
+				background-color: $tan;
+			}
+		}
+	}
+}
+
+.l-horizontal-tabs {
+  list-style-type: none;
+  padding:0 0 20px 0;
+  margin:0 0 25px 0;
+  li {
+  	display: block;
+  	margin-bottom: 5px;
+  	a {
+  		font-size: 24px;
+  		display: block;
+  		color: #777;
+  		line-height: 1.1;
+  		font-family: $serif;
+  		&:hover, &:active {
+  			text-decoration: none;
+  			color: $red;
+  		}
+  		&.active {
+  			color: $red;
+  		}
+  	}
+  }
+  @media (min-width:991px) {
+  	border-bottom: 1px solid $red;
+  	li {
+  		display: inline-block;
+  		margin: 0 10px 0 0;
+  	}
+  }
+}
