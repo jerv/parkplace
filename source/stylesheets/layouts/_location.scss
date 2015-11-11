@@ -1,0 +1,24 @@
+.l-location-hero {
+	padding: 85px 0 40px 0;
+	background:url('../images/lot.jpg');
+	-webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  background-position: 50%;
+	position: relative;
+	overflow: hidden;
+	.container {
+		position: relative;
+		z-index: 2;
+	}
+	@media (min-width:992px) {
+		padding: 105px 0 40px 0;
+	}
+}
+
+.l-location-body {
+	h3 {
+		line-height: 1.4;
+	}
+}
