@@ -1,19 +1,5 @@
-.l-dir-hero {
-	background:url('../images/dining2.jpg') no-repeat top center fixed; 
-	-webkit-background-size: auto 100%;
-  -moz-background-size: auto 100%;
-  -o-background-size: auto 100%;
-  background-size: auto 100%;
-	position: relative;
-	padding: 85px 0 45px 0;
-	text-align: center;
-	@media (min-width:991px) {
-		padding: 140px 0 70px 0;
-		-webkit-background-size: contain;
-		-moz-background-size: contain;
-		-o-background-size: contain;
-		background-size: contain;
-	}
+.l-directory-hero {
+	background-image:url('../images/dining2.jpg');
 }
 
 .l-filters {

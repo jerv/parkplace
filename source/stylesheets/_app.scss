@@ -10,6 +10,47 @@ $serif:'Old Standard TT', serif !global;
 
 @import 'vendor/0-dir';
 @import 'modules/0-dir';
+
+.l-quote-hero {
+	background:url('../images/dining2.jpg') no-repeat top center fixed; 
+	-webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+	position: relative;
+	padding: 85px 0 45px 0;
+	text-align: center;
+	@media (min-width:991px) {
+		padding: 140px 0 70px 0;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+	}
+}
+h2.u-quote {
+  font-size: 28px;
+  font-family: $sans-serif;
+  font-weight: 200;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 720px;
+  padding:0 35px;
+  position: relative;
+  i {
+    position: absolute;
+    top: 0;
+    font-size: 24px;
+    font-weight: normal;
+    &:first-of-type {
+      left:0;
+    }
+    &:last-of-type {
+      right: 0;
+    }
+  }
+}
+
 @import 'layouts/0-dir';
 
 /* BASE RULES */
@@ -49,6 +90,17 @@ h1,h2,h3,h4,h5 {
 .u-clearfix { display: block; }
 /* close commented backslash hack */
 
+.u-cta {
+	text-align: center;
+	p {
+		margin: 0 auto 20px auto;
+		max-width: 620px;
+	}
+	h3 {
+		margin-bottom: 30px;
+	}
+}
+
 .u-screen {
 	background-color: rgba(0,0,0,0.5);
 	display: block;
@@ -64,6 +116,10 @@ h1,h2,h3,h4,h5 {
 	&.white {
 		background-color: #fff;
 		opacity: 0.9;
+	}
+	&.red {
+		opacity: 0.8;
+		background-color: $red;
 	}
 }
 
@@ -138,25 +194,50 @@ h1,h2,h3,h4,h5 {
 	}
 }
 
-h2.u-quote {
-  font-size: 28px;
-  font-family: $sans-serif;
-  font-weight: 200;
-  color: #fff;
-  margin: 0 auto;
-  max-width: 720px;
-  padding:0 35px;
-  position: relative;
-  i {
-    position: absolute;
-    top: 0;
-    font-size: 24px;
-    font-weight: normal;
-    &:first-of-type {
-      left:0;
-    }
-    &:last-of-type {
-      right: 0;
-    }
-  }
+.u-box {
+	text-align: center;
+	color: $brown;
+	border:1px solid $brown;
+	padding: 0 25px;
+	height: 100%;
+	display: table;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 25px;
+	h3 {
+		margin-top: 35px;
+	}
+	.u-button {
+		margin-bottom: 35px;
+	}
+	.box-content {
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+		z-index: 2;
+	}
+	&.box-bg-1 {
+		color: #fff;
+		background: url('../images/merch.jpg');
+	}
+	&.box-bg-2 {
+		color: #fff;
+		background: url('../images/box-2.jpg');
+	}
+	&.box-red {
+		border-color: $red;
+		h3 {
+			color: $red;
+		}
+	}
+	&.box-brown {
+		border-color: $brown;
+		h3 {
+			color: $brown;
+		}
+	}
+	@media (min-width:992px) {
+		margin-bottom: 0;
+	}
 }
