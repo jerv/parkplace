@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Directory</title>
+    <title>Location</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -20,7 +20,7 @@
     <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="directory">
+  <body class="location">
 
     <nav>
 	<i class="fa fa-bars nav-trigger"></i>
@@ -75,95 +75,113 @@
 		</section>
 	</section>
 </nav>
-    <div class="u-hero l-directory-hero">
-	<div class="u-screen brown"></div>
+    <div class="l-location-hero">
 	<div class="container">
-		<h2 class="u-quote"><i class="fa fa-quote-left"></i>Since I discovered Park Place I stop there everyday I my way to work for coffee and pastry from Le Parisien Bakery. It's so much nicer than the other malls nearby.<i class="fa fa-quote-right"></i></h2>
+		<h2 class="u-quote"><i class="fa fa-quote-left"></i>I mainly go for the GB3 Gym, but it has a great mix of cool stores and has a real pleasant atmosphere.<i class="fa fa-quote-right"></i></h2>
+	</div>
+	<div class="u-screen brown"></div>
+</div>
+
+<div id="map_canvas"></div>
+
+<div class="container padding-md l-location-body">
+	<div class="row">
+		<div class="row-md-height">
+		  <div class="col-xs-12 col-sm-4 col-md-6 col-md-height col-md-middle">
+		  	<img src="http://placehold.it/350x250" />
+		  </div>
+			<div class="col-xs-12 col-sm-8 col-md-6 col-md-height col-md-middle">
+				<h3 class="red">5555 Address Lane<br>Fresno CA<br>93720</h3>
+				<p>
+					Lorem ipsum Eu adipisicing dolor non et Ut pariatur aute nisi aliqua voluptate sunt dolore id Excepteur exercitation nostrud veniam aliqua nulla nisi id sed id et qui ut elit quis irure deserunt minim id est officia laborum aliqua id dolore velit esse in nulla dolore officia prom sint fugiat ut laborum irure deserunt qui non culpa occaecat aliqua sit non quis quis pariatur eiusmod incididunt fugiat aliqua ad laborum velit laboris fugiat consectetur Excepteur sed deserunt cillum Excepteur nulla quis sunt commodo veniam officia cillum labore id aliquip sint consectetur aliquip mollit Ut aliqua ut eiusmod ea mollit veniam aliquip pariatur.
+				</p>
+				<h3>Contact Us</h3>
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<a class="u-button red block" href="javascript:void(0);">call us</a>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<a class="u-button red block" href="javascript:void(0);">email us</a>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<a class="u-button red block" href="javascript:void(0);">locate us</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
-<div class="container margin-md">
-	<div class="row">
-		<div class="hidden-xs col-sm-4 col-md-3 l-filters">
-			<h3 class="brown">Directory Filters</h3>
-			<ul>
-				<li><a class="active" href="javascript:void(0);">Health &amp; Beauty</a></li>
-				<li><a href="javascript:void(0);">Cuisine</a></li>
-				<li><a href="javascript:void(0);">Fashion</a></li>
-				<li><a href="javascript:void(0);">Services</a></li>
-				<li><a href="javascript:void(0);">Offices</a></li>
-			</ul>
-		</div>
-		<div class="col-xs-12 col-sm-8 col-md-9">
-			<ul class="l-horizontal-tabs">
-				<li><a class="active" href="javascript:void(0)">Information</a></li>
-				<li><a href="javascript:void(0)">Sales</a></li>
-				<li><a href="javascript:void(0)">Coupons</a></li>
-				<li><a href="javascript:void(0)">Specials</a></li>
-			</ul>
-			<a href="javascript:void(0);" class="m-client u-clearfix">
-				<img src="http://placehold.it/240x150" />
-				<section class="m-client-body">
-					<h5>Business Name/Title</h5>
-					<p>
-						Lorem ipsum In veniam minim aute pariatur Excepteur occaecat qui id do in nostrud fugiat dolor dolor et dolore consectetur eiusmod anim aute enim occaecat quis elit est cillum ut in in dolor.
-					</p>
-					<ul>
-						<li>
-							<i class="fa fa-fw fa-clock-o"></i> 6:00 am - 9:00 pm
-						</li>
-						<li>
-							<i class="fa fa-fw fa-phone"></i> (559) 123-4567
-						</li>
-						<li>
-							<i class="fa fa-fw fa-map-marker"></i> Directions
-						</li>
-					</ul>
-				</section>
-			</a>
-			<a href="javascript:void(0);" class="m-client u-clearfix">
-				<img src="http://placehold.it/240x150" />
-				<section class="m-client-body">
-					<h5>Business Name/Title</h5>
-					<p>
-						Lorem ipsum In veniam minim aute pariatur Excepteur occaecat qui id do in nostrud fugiat dolor dolor et dolore consectetur eiusmod anim aute enim occaecat quis elit est cillum ut in in dolor.
-					</p>
-					<ul>
-						<li>
-							<i class="fa fa-fw fa-clock-o"></i> 6:00 am - 9:00 pm
-						</li>
-						<li>
-							<i class="fa fa-fw fa-phone"></i> (559) 123-4567
-						</li>
-						<li>
-							<i class="fa fa-fw fa-map-marker"></i> Directions
-						</li>
-					</ul>
-				</section>
-			</a>
-			<a href="javascript:void(0);" class="m-client u-clearfix">
-				<img src="http://placehold.it/240x150" />
-				<section class="m-client-body">
-					<h5>Business Name/Title</h5>
-					<p>
-						Lorem ipsum In veniam minim aute pariatur Excepteur occaecat qui id do in nostrud fugiat dolor dolor et dolore consectetur eiusmod anim aute enim occaecat quis elit est cillum ut in in dolor.
-					</p>
-					<ul>
-						<li>
-							<i class="fa fa-fw fa-clock-o"></i> 6:00 am - 9:00 pm
-						</li>
-						<li>
-							<i class="fa fa-fw fa-phone"></i> (559) 123-4567
-						</li>
-						<li>
-							<i class="fa fa-fw fa-map-marker"></i> Directions
-						</li>
-					</ul>
-				</section>
-			</a>
-		</div>
-	</div>
-</div>
+<!--
+Add the code below to the bottom of your page, just before the closing </body> tag.
+Edit myLatlng and the other variables.
+
+Find syntax for Features that can be styled here:
+
+https://developers.google.com/maps/documentation/javascript/reference#MapTypeStyleFeatureType
+
+Or use a service such as:
+
+http://software.stadtwerk.org/google_maps_colorizr/#
+http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
+https://developers.google.com/maps/documentation/javascript/tutorial
+-->
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+  var bittersMap = (function () {
+    var myLatlng = new google.maps.LatLng(6.851020, 18.057340),
+        mapCenter = new google.maps.LatLng(6.851020, 18.057340),
+        mapCanvas = document.getElementById('map_canvas'),
+        mapOptions = {
+          center: mapCenter,
+          zoom: 7,
+          scrollwheel: false,
+          draggable: true,
+          disableDefaultUI: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        },
+        map = new google.maps.Map(mapCanvas, mapOptions),
+        contentString =
+          '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">thoughtbot</h1>'+
+          '<div id="bodyContent"'+
+          '<p>Sveavägen 98</p>'+
+          '</div>'+
+          '</div>',
+        infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          maxWidth: 300
+        }),
+        marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'thoughtbot (Sweden)'
+        });
+
+    return {
+      init: function () {
+        map.set('styles', [{
+          featureType: 'landscape',
+          elementType: 'geometry',
+          stylers: [
+            { hue: '#ffff00' },
+            { saturation: 30 },
+            { lightness: 10}
+          ]}
+        ]);
+
+        google.maps.event.addListener(marker, 'click', function () {
+          infowindow.open(map,marker);
+        });
+      }
+    };
+  }());
+
+  bittersMap.init();
+</script>
     <footer>
 	<div class="container">
 		<div class="row">
