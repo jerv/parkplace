@@ -34,18 +34,11 @@ title: Park Place Shopping Center
 		    <div class="col-xs-12 col-md-6 col-md-height col-md-middle">
 		      <div class="inside">
 		        <div class="content">
-		        	<h3 class="red">Great Stories</h3>
-		        	<p>
-		        		Discover all the exclusive stores located at Park Place
+		        	<h3 class="red">Your Chance to Win $500 in Park Place</h3>
+		        	<p class="wide">
+		        		Have you got what it takes to find the clues and solve the riddle? Those who successfully find the clues and solve the riddle are entered in a prize draw where 3 people will win $500 each
 		        	</p>
-		        	<div class="row">
-		        		<div class="col-xs-12 col-sm-6">	
-		        			<%= link_to 'Enter', 'javascript:void(0);', :class=>'u-button red' %>
-		        		</div>
-		        		<div class="col-xs-12 col-sm-6">	
-		        			<%= link_to 'Share', 'javascript:void(0);', :class=>'u-button red trans' %>
-		        		</div>
-		        	</div>
+		        	<%= link_to 'Take Part', 'javascript:void(0);', :class=>'u-button red' %>
 		        </div>
 		      </div>
 		    </div>
@@ -119,7 +112,20 @@ title: Park Place Shopping Center
 <div class="l-home-splash-2">
 	<div class="u-screen brown">&nbsp;</div>
 	<div class="container">
-		<h2 class="u-quote"><i class="fa fa-quote-left"></i>Park Place is my new favorite shopping location. Well worth a visit if you like to get pampered and have great food.<i class="fa fa-quote-right"></i></h2>
+		<div class="quote-slick">
+			<div>
+				<h2 class="u-quote"><i class="fa fa-quote-left"></i>Park Place is my new favorite shopping location. Well worth a visit if you like to get pampered and have great food.<i class="fa fa-quote-right"></i></h2>
+			</div>
+			<div>
+				<h2 class="u-quote"><i class="fa fa-quote-left"></i>Since I discovered Park Place I stop there everyday on my way to work for coffee and a pastry from Le Parisien Bakery. So much nicer than the other malls nearby.<i class="fa fa-quote-right"></i></h2>
+			</div>
+			<div>
+				<h2 class="u-quote"><i class="fa fa-quote-left"></i>I go mainly for the GB3 gym, but it has a great mix of cool stores and has a real pleasant atmosphere<i class="fa fa-quote-right"></i></h2>
+			</div>
+			<div>
+				<h2 class="u-quote"><i class="fa fa-quote-left"></i>I love this place. I come to relax at La Peau Spa and usually end up staying most of the day – especially now that Ginza has opened<i class="fa fa-quote-right"></i></h2>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -129,13 +135,27 @@ title: Park Place Shopping Center
 	<div class="u-screen white">&nbsp;</div>
 	<div class="container">
 		<p>
-			Lorem ipsum Aliqua fugiat quis exercitation cillum veniam id Ut in aliqua magna aute dolore proident anim Duis laborum sint quis ut Excepteur nostrud ad sit dolor est occaecat exercitation quis cupidatat aliquip consectetur culpa. Lorem ipsum Aliqua fugiat quis exercitation cillum veniam id Ut in aliqua magna aute dolore proident anim Duis.
+			Park Place is ideally located at the corner of N Palm Ave and W Nees Ave in Northern Fresno, and has some amazing views over the San Joaquin River. When you see The Daily Grill, you’ll know you have reached your destination.
 		</p>
 	</div>
 	<div class="red">
 		<div class="container">
 			<h2>Leasing Opportunities</h2>
-			<%= link_to 'View Availability', 'contact.html', :class=>"u-button trans-white" %>
+			<p>
+				If you are looking for the right place to locate your new business – look no further!
+			</p>
+			<div class="row">
+				<div class="col-xs-12 col-md-6 col-md-offset-3">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<%= link_to 'Check Availability', 'contact.html', :class=>"u-button trans-white" %>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<%= link_to 'Contact Us', 'contact.html', :class=>"u-button trans-white" %>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -154,7 +174,17 @@ title: Park Place Shopping Center
       mobileFirst: true,
       slidesToShow: 1,
       prevArrow: '<i class="fa fa-chevron-left"></i>',
-      nextArrow: '<i class="fa fa-chevron-right"></i>'
+      nextArrow: '<i class="fa fa-chevron-right"></i>',
+      speed: 450
+    });
+    $('.quote-slick').slick({
+      autoplay: true,
+      mobileFirst: true,
+      slidesToShow: 1,
+      draggable: false,
+      arrows: false,
+      pauseOnHover: false,
+      speed: 740
     });
   });
 </script>
@@ -177,12 +207,12 @@ https://developers.google.com/maps/documentation/javascript/tutorial
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
   var bittersMap = (function () {
-    var myLatlng = new google.maps.LatLng(6.851020, 18.057340),
-        mapCenter = new google.maps.LatLng(6.851020, 18.057340),
+    var myLatlng = new google.maps.LatLng(36.8514702, -119.8073112),
+        mapCenter = new google.maps.LatLng(36.8514702, -119.8073112),
         mapCanvas = document.getElementById('map_canvas'),
         mapOptions = {
           center: mapCenter,
-          zoom: 7,
+          zoom: 17,
           scrollwheel: false,
           draggable: true,
           disableDefaultUI: true,

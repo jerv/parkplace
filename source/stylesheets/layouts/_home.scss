@@ -47,6 +47,9 @@
   p {
     max-width: 240px;
     margin: 0 auto 25px auto;
+    &.wide {
+      max-width: none;
+    }
   }
   .u-button {
     display: block;
@@ -89,7 +92,7 @@
     z-index: 2;
     max-width: 720px;
     margin: 0 auto;
-    padding: 65px 0;
+    padding: 25px 0;
   }
   .red {
     position: relative;
@@ -99,11 +102,6 @@
     background-color: rgba(191, 29, 29, 0.8);
     .u-button {
       margin: 15px auto;
-    }
-  }
-  @media (min-width:991px) {
-    p { 
-      padding: 90px 0;
     }
   }
 }
