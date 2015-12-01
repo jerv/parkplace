@@ -3181,24 +3181,25 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
       left: 0;
       position: absolute;
       width: 100%;
-      opacity: 0.25; }
+      opacity: 0.25;
+      border-radius: 0; }
 
-/* line 70, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+/* line 71, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
 .slick-list {
   position: relative;
   overflow: hidden;
   display: block;
   margin: 0;
   padding: 0; }
-  /* line 76, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 77, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-list:focus {
     outline: none; }
-  /* line 79, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 80, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-list.dragging {
     cursor: pointer;
     cursor: hand; }
 
-/* line 85, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+/* line 86, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
@@ -3207,24 +3208,24 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
-/* line 94, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+/* line 95, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
 .slick-track {
   position: relative;
   left: 0;
   top: 0;
   display: block; }
-  /* line 99, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 100, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-track:before, .slick-track:after {
     content: "";
     display: table; }
-  /* line 104, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 105, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-track:after {
     clear: both; }
-  /* line 107, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 108, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-loading .slick-track {
     visibility: hidden; }
 
-/* line 112, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+/* line 113, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
 .slick-slide {
   float: left;
   height: 100%;
@@ -3232,35 +3233,35 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   overflow: hidden;
   border-radius: 3px;
   display: none; }
-  /* line 118, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 119, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-slide:focus {
     outline: none; }
-  /* line 121, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 122, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   [dir="rtl"] .slick-slide {
     float: right; }
-  /* line 124, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 125, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-slide.slick-loading img {
     display: none; }
-  /* line 128, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 129, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-slide.dragging img {
     pointer-events: none; }
-  /* line 131, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 132, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-initialized .slick-slide {
     display: block; }
-  /* line 134, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 135, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-loading .slick-slide {
     visibility: hidden; }
-  /* line 137, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 138, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-vertical .slick-slide {
     display: block;
     height: auto;
     border: 1px solid transparent; }
 
-/* line 144, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+/* line 145, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
 .slick-arrow.slick-hidden {
   display: none; }
 
-/* line 148, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+/* line 149, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
 i.slick-arrow {
   font-size: 36px;
   line-height: 36px;
@@ -3273,20 +3274,20 @@ i.slick-arrow {
   color: #ccc;
   text-align: center;
   cursor: pointer; }
-  /* line 160, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 161, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   i.slick-arrow:hover {
     color: #aaa; }
-  /* line 163, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 164, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   i.slick-arrow:active {
     color: #BF1D1D; }
-  /* line 166, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 167, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   i.slick-arrow:first-of-type {
     left: -8px; }
-  /* line 169, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 170, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   i.slick-arrow:last-of-type {
     right: -8px; }
   @media (max-width: 870px) {
-    /* line 148, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+    /* line 149, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
     i.slick-arrow {
       display: none !important; } }
 
@@ -3770,38 +3771,56 @@ nav {
 /* line 1, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
 footer {
   text-align: center;
+  padding: 30px 0;
   background-color: #292828;
   color: #fff; }
-  /* line 5, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+  /* line 6, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+  footer h3 {
+    margin: 0; }
+  /* line 9, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
   footer a {
     color: inherit;
     display: block;
     transition: all 0.2s ease-out; }
-    /* line 9, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+    /* line 13, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
     footer a:hover {
       color: #fff;
       text-decoration: none; }
-    /* line 13, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
-    footer a:active {
-      text-decoration: none; }
-  /* line 17, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+    /* line 17, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+    footer a:active, footer a:focus {
+      text-decoration: none;
+      color: #fff; }
+  /* line 22, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
   footer ul {
     list-style-type: none;
-    padding: 0; }
-    /* line 20, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+    padding: 0;
+    margin-top: 15px; }
+    /* line 26, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
     footer ul a {
       line-height: 1.7;
       font-size: 16px;
       color: rgba(250, 250, 250, 0.7);
       border-radius: 3px;
       font-weight: 300; }
-      /* line 26, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+      /* line 32, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
       footer ul a:hover {
         color: #fff; }
-  /* line 31, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+  /* line 37, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
   footer p {
+    text-align: left; }
+  /* line 40, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+  footer p.copy {
     color: rgba(250, 250, 250, 0.2);
-    margin-top: 25px; }
+    margin-top: 25px;
+    text-align: center; }
+  /* line 45, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+  footer .u-button {
+    display: block; }
+  /* line 48, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
+  footer img {
+    max-width: 90%;
+    margin: 10px auto;
+    display: block; }
 
 /* line 1, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
 .l-home-hero {
@@ -3855,64 +3874,63 @@ footer {
   .l-home-splash-1 p {
     max-width: 240px;
     margin: 0 auto 25px auto; }
-  /* line 51, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+    /* line 50, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+    .l-home-splash-1 p.wide {
+      max-width: none; }
+  /* line 54, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
   .l-home-splash-1 .u-button {
     display: block;
     width: 100%;
     max-width: 180px;
     margin: 10px auto 0 auto; }
-  /* line 57, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+  /* line 60, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
   .l-home-splash-1 .content {
     padding-top: 45px;
     padding-bottom: 45px; }
-  /* line 61, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+  /* line 64, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
   .l-home-splash-1 .container {
     width: 100%;
     max-width: 1200px; }
 
-/* line 67, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+/* line 70, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
 .l-home-splash-2 {
   position: relative;
   text-align: center;
   padding: 65px 0;
   background: url("../images/casual-dining-makeover.jpg");
   background-size: 100% auto; }
-  /* line 73, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+  /* line 76, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
   .l-home-splash-2 .container {
     position: relative;
     z-index: 2; }
   @media (min-width: 991px) {
-    /* line 67, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+    /* line 70, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
     .l-home-splash-2 {
       padding: 90px 0; } }
 
-/* line 82, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+/* line 85, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
 .l-home-splash-3 {
   position: relative;
   text-align: center;
   background: url("../images/splash-3.png");
   background-size: 100% auto; }
-  /* line 87, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+  /* line 90, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
   .l-home-splash-3 p {
     position: relative;
     z-index: 2;
     max-width: 720px;
     margin: 0 auto;
-    padding: 65px 0; }
-  /* line 94, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+    padding: 25px 0; }
+  /* line 97, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
   .l-home-splash-3 .red {
     position: relative;
     z-index: 3;
     color: #fff;
     padding: 15px 0;
     background-color: rgba(191, 29, 29, 0.8); }
-    /* line 100, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+    /* line 103, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
     .l-home-splash-3 .red .u-button {
       margin: 15px auto; }
-  @media (min-width: 991px) {
-    /* line 105, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
-    .l-home-splash-3 p {
-      padding: 90px 0; } }
 
 /* line 1, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
 .l-directory-hero {
