@@ -4,7 +4,7 @@ title: Park Place Shopping Center
 
 <div class="l-home-hero">
 	<div class="container">
-		<h1>Great Stores. Better Living.</h1>
+		<h1>Park Place. Great Stores. Better Living.</h1>
 		<%= link_to 'Directory', 'directory.html', :class=>'u-button red' %>
 	</div>
 	<div class="u-screen">&nbsp;</div>
@@ -36,7 +36,7 @@ title: Park Place Shopping Center
 		        <div class="content">
 		        	<h3 class="red">Great Stories</h3>
 		        	<p>
-		        		Lorem ipsum Quis in veniam aliqua ut dolor in ullamco id sit aliquip irure Excepteur anim Excepteur sunt amet.
+		        		Discover all the exclusive stores located at Park Place
 		        	</p>
 		        	<div class="row">
 		        		<div class="col-xs-12 col-sm-6">	
@@ -49,16 +49,67 @@ title: Park Place Shopping Center
 		        </div>
 		      </div>
 		    </div>
-		    <div class="col-xs-12 col-md-6 col-md-height col-md-middle">
-		      <div class="inside">
-		        <div class="content">
-		        	<h3 class="brown">Great Stories</h3>
-		        	<p>
-		        		Lorem ipsum Quis in veniam aliqua ut dolor in ullamco id sit aliquip irure Excepteur anim Excepteur sunt amet.
-		        	</p>
-		        	<%= link_to 'Enter', 'javascript:void(0);', :class=>'u-button brown' %>
-		        </div>
+		    <div class="col-xs-12 col-md-6 col-md-height col-md-middle news-slick">
+		    	<div>
+			      <div class="inside">
+			        <div class="content">
+			        	<h3 class="brown">Great Stories</h3>
+			        	<p>
+			        		Discover all the exclusive stores located at Park Place.
+			        	</p>
+			        	<%= link_to 'Explore Stores', 'javascript:void(0);', :class=>'u-button brown' %>
+			        	<%= image_tag 'woman_shop_clothes.jpg', :class=>'l-bg-image' %>
+			        </div>
+			      </div>
 		      </div>
+		      <div>
+		      	<div class="inside">
+			        <div class="content">
+			        	<h3 class="brown">Fantastic Food</h3>
+			        	<p>
+			        		Sample some of the amazing food and wine available.
+			        	</p>
+			        	<%= link_to 'View Restaurants', 'javascript:void(0);', :class=>'u-button brown' %>
+			        	<%= image_tag 'fine-dining.jpg', :class=>'l-bg-image' %>
+			        </div>
+			      </div>
+		      </div>
+          <div>
+          	<div class="inside">
+    	        <div class="content">
+    	        	<h3 class="brown">Fun Activities</h3>
+    	        	<p>
+    	        		See what great events are happening at Park Place.
+    	        	</p>
+    	        	<%= link_to 'View Events', 'javascript:void(0);', :class=>'u-button brown' %>
+    	        	<%= image_tag 'casual-dining-makeover.jpg', :class=>'l-bg-image' %>
+    	        </div>
+    	      </div>
+          </div>
+          <div>
+          	<div class="inside">
+    	        <div class="content">
+    	        	<h3 class="brown">Sales and Offers</h3>
+    	        	<p>
+    	        		Find all the great store offers now available!
+    	        	</p>
+    	        	<%= link_to 'Get Great Deals', 'javascript:void(0);', :class=>'u-button brown' %>
+    	        	<%= image_tag 'sales-cropped.jpg', :class=>'l-bg-image' %>
+    	        </div>
+    	      </div>
+          </div>
+          <div>
+          	<div class="inside">
+    	        <div class="content">
+    	        	<h3 class="brown">1 Week Free Gym Membership</h3>
+    	        	<p>
+    	        		1 week free gym membership using this link.
+    	        	</p>
+    	        	<%= link_to 'View Gym', 'javascript:void(0);', :class=>'u-button brown' %>
+    	        	<%= image_tag 'gb3-cropped.jpg', :class=>'l-bg-image' %>
+    	        </div>
+    	      </div>
+          </div>
 		    </div>
 		   </div>
 		</div>
@@ -95,6 +146,13 @@ title: Park Place Shopping Center
       autoplay: true,
       mobileFirst: true,
       slidesToShow: 4,
+      prevArrow: '<i class="fa fa-chevron-left"></i>',
+      nextArrow: '<i class="fa fa-chevron-right"></i>'
+    });
+    $('.news-slick').slick({
+      autoplay: true,
+      mobileFirst: true,
+      slidesToShow: 1,
       prevArrow: '<i class="fa fa-chevron-left"></i>',
       nextArrow: '<i class="fa fa-chevron-right"></i>'
     });
