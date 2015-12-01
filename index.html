@@ -43,25 +43,23 @@
 					<li>
 						<a href="events.html">Events</a>
 						<ul>
-							<li><a href="javascript:void(0);">Featured Events</a></li>
+							<li><a href="javascript:void(0);">View Events</a></li>
 							<li><a href="javascript:void(0);">Book an Event</a></li>
-							<li><a href="javascript:void(0);">Lookbook</a></li>
 						</ul>
 					</li>
 					<li>
 						<a href="sales.html">Sales</a>
 						<ul>
-							<li><a href="javascript:void(0);">Featured Sales</a></li>
+							<li><a href="javascript:void(0);">View Sales</a></li>
 							<li><a href="javascript:void(0);">Latest Offers</a></li>
-							<li><a href="javascript:void(0);">Coupons</a></li>
-							<li><a href="javascript:void(0);">Specials</a></li>
 						</ul>
 					</li>
 					<li>
 						<a href="location.html">Location</a>
 						<ul>
 							<li><a href="javascript:void(0);">Address</a></li>
-							<li><a href="javascript:void(0);">Google Maps</a></li>
+							<li><a href="javascript:void(0);">Map</a></li>
+							<li><a href="javascript:void(0);">Directions</a></li>
 						</ul>
 					</li>
 					<li>
@@ -77,7 +75,7 @@
 </nav>
     <div class="l-home-hero">
 	<div class="container">
-		<h1>Great Stores. Better Living.</h1>
+		<h1>Park Place. Great Stores. Better Living.</h1>
 		<a class="u-button red" href="directory.html">Directory</a>
 	</div>
 	<div class="u-screen">&nbsp;</div>
@@ -109,7 +107,7 @@
 		        <div class="content">
 		        	<h3 class="red">Great Stories</h3>
 		        	<p>
-		        		Lorem ipsum Quis in veniam aliqua ut dolor in ullamco id sit aliquip irure Excepteur anim Excepteur sunt amet.
+		        		Discover all the exclusive stores located at Park Place
 		        	</p>
 		        	<div class="row">
 		        		<div class="col-xs-12 col-sm-6">	
@@ -122,16 +120,67 @@
 		        </div>
 		      </div>
 		    </div>
-		    <div class="col-xs-12 col-md-6 col-md-height col-md-middle">
-		      <div class="inside">
-		        <div class="content">
-		        	<h3 class="brown">Great Stories</h3>
-		        	<p>
-		        		Lorem ipsum Quis in veniam aliqua ut dolor in ullamco id sit aliquip irure Excepteur anim Excepteur sunt amet.
-		        	</p>
-		        	<a class="u-button brown" href="javascript:void(0);">Enter</a>
-		        </div>
+		    <div class="col-xs-12 col-md-6 col-md-height col-md-middle news-slick">
+		    	<div>
+			      <div class="inside">
+			        <div class="content">
+			        	<h3 class="brown">Great Stories</h3>
+			        	<p>
+			        		Discover all the exclusive stores located at Park Place.
+			        	</p>
+			        	<a class="u-button brown" href="javascript:void(0);">Explore Stores</a>
+			        	<img class="l-bg-image" src="images/woman_shop_clothes.jpg" />
+			        </div>
+			      </div>
 		      </div>
+		      <div>
+		      	<div class="inside">
+			        <div class="content">
+			        	<h3 class="brown">Fantastic Food</h3>
+			        	<p>
+			        		Sample some of the amazing food and wine available.
+			        	</p>
+			        	<a class="u-button brown" href="javascript:void(0);">View Restaurants</a>
+			        	<img class="l-bg-image" src="images/fine-dining.jpg" />
+			        </div>
+			      </div>
+		      </div>
+          <div>
+          	<div class="inside">
+    	        <div class="content">
+    	        	<h3 class="brown">Fun Activities</h3>
+    	        	<p>
+    	        		See what great events are happening at Park Place.
+    	        	</p>
+    	        	<a class="u-button brown" href="javascript:void(0);">View Events</a>
+    	        	<img class="l-bg-image" src="images/casual-dining-makeover.jpg" />
+    	        </div>
+    	      </div>
+          </div>
+          <div>
+          	<div class="inside">
+    	        <div class="content">
+    	        	<h3 class="brown">Sales and Offers</h3>
+    	        	<p>
+    	        		Find all the great store offers now available!
+    	        	</p>
+    	        	<a class="u-button brown" href="javascript:void(0);">Get Great Deals</a>
+    	        	<img class="l-bg-image" src="images/sales-cropped.jpg" />
+    	        </div>
+    	      </div>
+          </div>
+          <div>
+          	<div class="inside">
+    	        <div class="content">
+    	        	<h3 class="brown">1 Week Free Gym Membership</h3>
+    	        	<p>
+    	        		1 week free gym membership using this link.
+    	        	</p>
+    	        	<a class="u-button brown" href="javascript:void(0);">View Gym</a>
+    	        	<img class="l-bg-image" src="images/gb3-cropped.jpg" />
+    	        </div>
+    	      </div>
+          </div>
 		    </div>
 		   </div>
 		</div>
@@ -168,6 +217,13 @@
       autoplay: true,
       mobileFirst: true,
       slidesToShow: 4,
+      prevArrow: '<i class="fa fa-chevron-left"></i>',
+      nextArrow: '<i class="fa fa-chevron-right"></i>'
+    });
+    $('.news-slick').slick({
+      autoplay: true,
+      mobileFirst: true,
+      slidesToShow: 1,
       prevArrow: '<i class="fa fa-chevron-left"></i>',
       nextArrow: '<i class="fa fa-chevron-right"></i>'
     });

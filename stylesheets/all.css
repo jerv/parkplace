@@ -3144,23 +3144,61 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     display: table-cell;
     vertical-align: middle;
     padding: 0 15px; }
+    /* line 28, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+    .slick-slider.clients-slick .slick-slide img {
+      display: block;
+      width: 100%;
+      padding: 1px;
+      opacity: 0.8;
+      transition: opacity 0.3s ease-out; }
+  /* line 37, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  .slick-slider.news-slick {
+    padding: 0;
+    position: relative; }
+    /* line 40, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+    .slick-slider.news-slick i.slick-arrow {
+      color: #735821;
+      z-index: 50; }
+      /* line 43, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+      .slick-slider.news-slick i.slick-arrow:hover {
+        color: #876727; }
+      /* line 46, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+      .slick-slider.news-slick i.slick-arrow:first-of-type {
+        left: 20px; }
+      /* line 49, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+      .slick-slider.news-slick i.slick-arrow:last-of-type {
+        right: 20px; }
+    /* line 53, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+    .slick-slider.news-slick .slick-slide {
+      position: relative; }
+    /* line 56, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+    .slick-slider.news-slick h3, .slick-slider.news-slick a, .slick-slider.news-slick p {
+      position: relative;
+      z-index: 2; }
+    /* line 60, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+    .slick-slider.news-slick img.l-bg-image {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      opacity: 0.25; }
 
-/* line 32, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+/* line 70, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
 .slick-list {
   position: relative;
   overflow: hidden;
   display: block;
   margin: 0;
   padding: 0; }
-  /* line 38, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 76, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-list:focus {
     outline: none; }
-  /* line 41, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 79, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-list.dragging {
     cursor: pointer;
     cursor: hand; }
 
-/* line 47, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+/* line 85, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
@@ -3169,24 +3207,24 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
-/* line 56, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+/* line 94, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
 .slick-track {
   position: relative;
   left: 0;
   top: 0;
   display: block; }
-  /* line 61, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 99, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-track:before, .slick-track:after {
     content: "";
     display: table; }
-  /* line 66, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 104, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-track:after {
     clear: both; }
-  /* line 69, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 107, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-loading .slick-track {
     visibility: hidden; }
 
-/* line 74, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+/* line 112, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
 .slick-slide {
   float: left;
   height: 100%;
@@ -3194,42 +3232,35 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   overflow: hidden;
   border-radius: 3px;
   display: none; }
-  /* line 80, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 118, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-slide:focus {
     outline: none; }
-  /* line 83, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 121, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   [dir="rtl"] .slick-slide {
     float: right; }
-  /* line 86, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
-  .slick-slide img {
-    display: block;
-    width: 100%;
-    padding: 1px;
-    opacity: 0.6;
-    transition: opacity 0.3s ease-out; }
-  /* line 93, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 124, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-slide.slick-loading img {
     display: none; }
-  /* line 97, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 128, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-slide.dragging img {
     pointer-events: none; }
-  /* line 100, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 131, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-initialized .slick-slide {
     display: block; }
-  /* line 103, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 134, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-loading .slick-slide {
     visibility: hidden; }
-  /* line 106, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 137, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   .slick-vertical .slick-slide {
     display: block;
     height: auto;
     border: 1px solid transparent; }
 
-/* line 113, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+/* line 144, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
 .slick-arrow.slick-hidden {
   display: none; }
 
-/* line 117, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+/* line 148, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
 i.slick-arrow {
   font-size: 36px;
   line-height: 36px;
@@ -3242,20 +3273,20 @@ i.slick-arrow {
   color: #ccc;
   text-align: center;
   cursor: pointer; }
-  /* line 129, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 160, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   i.slick-arrow:hover {
     color: #aaa; }
-  /* line 132, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 163, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   i.slick-arrow:active {
     color: #BF1D1D; }
-  /* line 135, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 166, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   i.slick-arrow:first-of-type {
     left: -8px; }
-  /* line 138, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+  /* line 169, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
   i.slick-arrow:last-of-type {
     right: -8px; }
   @media (max-width: 870px) {
-    /* line 117, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
+    /* line 148, /Users/chief/work/parkplace/source/stylesheets/vendor/_slick.scss */
     i.slick-arrow {
       display: none !important; } }
 
@@ -3831,62 +3862,55 @@ footer {
     max-width: 180px;
     margin: 10px auto 0 auto; }
   /* line 57, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
-  .l-home-splash-1 .col-md-6 {
+  .l-home-splash-1 .content {
     padding-top: 45px;
     padding-bottom: 45px; }
   /* line 61, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
-  .l-home-splash-1 .col-md-6:last-of-type {
-    background: url("../images/shop_trans.png");
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%; }
-  /* line 68, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
   .l-home-splash-1 .container {
     width: 100%;
     max-width: 1200px; }
 
-/* line 74, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+/* line 67, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
 .l-home-splash-2 {
   position: relative;
   text-align: center;
   padding: 65px 0;
   background: url("../images/casual-dining-makeover.jpg");
   background-size: 100% auto; }
-  /* line 80, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+  /* line 73, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
   .l-home-splash-2 .container {
     position: relative;
     z-index: 2; }
   @media (min-width: 991px) {
-    /* line 74, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+    /* line 67, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
     .l-home-splash-2 {
       padding: 90px 0; } }
 
-/* line 89, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+/* line 82, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
 .l-home-splash-3 {
   position: relative;
   text-align: center;
   background: url("../images/splash-3.png");
   background-size: 100% auto; }
-  /* line 94, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+  /* line 87, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
   .l-home-splash-3 p {
     position: relative;
     z-index: 2;
     max-width: 720px;
     margin: 0 auto;
     padding: 65px 0; }
-  /* line 101, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+  /* line 94, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
   .l-home-splash-3 .red {
     position: relative;
     z-index: 3;
     color: #fff;
     padding: 15px 0;
     background-color: rgba(191, 29, 29, 0.8); }
-    /* line 107, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+    /* line 100, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
     .l-home-splash-3 .red .u-button {
       margin: 15px auto; }
   @media (min-width: 991px) {
-    /* line 112, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+    /* line 105, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
     .l-home-splash-3 p {
       padding: 90px 0; } }
 
