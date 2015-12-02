@@ -91,8 +91,11 @@
     position: relative;
     z-index: 2;
     max-width: 720px;
-    margin: 0 auto;
-    padding: 25px 0;
+    margin-bottom: 25px;
+    margin: 45px auto 15px auto;
+    &:last-of-type {
+      margin-bottom: 45px;
+    }
   }
   .red {
     position: relative;
@@ -100,6 +103,9 @@
     color: #fff;
     padding: 15px 0;
     background-color: rgba(191, 29, 29, 0.8);
+    p {
+      margin: 15px auto;
+    }
     .u-button {
       margin: 15px auto;
     }

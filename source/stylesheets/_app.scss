@@ -34,20 +34,18 @@ h2.u-quote {
   font-weight: 200;
   color: #fff;
   margin: 0 auto;
-  max-width: 720px;
+  max-width: 840px;
   padding:0 35px;
   position: relative;
   display: block;
   i {
-    position: absolute;
-    top: 0;
     font-size: 24px;
     font-weight: normal;
     &:first-of-type {
-      left:0;
+      margin-right:10px;
     }
     &:last-of-type {
-      right: 0;
+      margin-left:10px;
     }
   }
 }

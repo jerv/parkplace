@@ -83,32 +83,52 @@ nav {
 				& > a {
 					font-family:$serif;
 				}
+				&.social {
+					display: inline-block;
+					margin-right: 3px;
+				}
 			}
 			a {
 				color: inherit;
 				&:hover {
 					text-decoration: none;
-					opacity: 0.8;
 				}
 			}
 		}
 	}
 	@media (min-width:991px) {
-		line-height: 65px;
 		.upper {
 			height: 65px;
 			a.site-id {
 				margin: 0;
 				position: relative;
+				top: 12px;
 				left: auto;
 				h2 {
 					font-size: 22px;
 				}
 			}
+			ul.main > li {
+				height: 65px;
+				&:hover > a {
+					border-bottom:2px solid $red;
+				}
+				&.social {
+					font-size: 24px;
+					display: inline-block;
+					margin: 0;
+					a {
+						padding: 0 5px;
+					}
+					&:hover a {
+						border-bottom:2px solid $red;						
+					}
+				}
+			}
 			ul {
 				display: block;
 				position: absolute;
-				top: 0;
+				top: 12px;
 				right: 0;
 				width: 100%;
 				text-align: right;
@@ -120,11 +140,11 @@ nav {
 					ul {
 						display: none;
 						position: absolute;
-						top: 66px;
+						top: 53px;
 						left: 0;
 						width: 100%;
 						text-align: center;
-						line-height: 26px;
+						line-height: 30px;
 						&:before {
 							content: "";
 							display: block;
@@ -132,7 +152,7 @@ nav {
 							width: 300%;
 							height: 28px;
 							position: absolute;
-							bottom:0;
+							top:0;
 							left: -150%;
 						}
 						a {

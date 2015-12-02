@@ -23,8 +23,7 @@
 			text-align: center;
 			font-weight: 300;
 			font-size: 16px;
-			height: 40px;
-			line-height: 45px;
+			padding: 10px 0;
 			color: $tan;
 			&:hover, &:active {
 				box-shadow:0 0 0 1px darken($tan, 8) inset;
@@ -34,6 +33,10 @@
 			&.active {
 				color: #fff;
 				background-color: $tan;
+				span {
+					border-bottom: 2px solid $red;
+					padding-bottom: 3px;
+				}
 				&:hover {
 					color: #fff;
 				}

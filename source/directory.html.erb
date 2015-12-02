@@ -5,7 +5,7 @@ title: Directory
 <div class="u-hero l-directory-hero">
 	<div class="u-screen brown"></div>
 	<div class="container">
-		<h2 class="u-quote"><i class="fa fa-quote-left"></i>Since I discovered Park Place I stop there everyday I my way to work for coffee and pastry from Le Parisien Bakery. It's so much nicer than the other malls nearby.<i class="fa fa-quote-right"></i></h2>
+		<h2 class="u-quote"><i class="fa fa-quote-left"></i>Since I discovered Park Place I stop there everyday on my way to work for coffee and pastry from Le Parisien Bakery. It's so much nicer than the other malls nearby.<i class="fa fa-quote-right"></i></h2>
 	</div>
 </div>
 
@@ -14,20 +14,52 @@ title: Directory
 		<div class="hidden-xs col-sm-4 col-md-3 l-filters">
 			<h3 class="brown">Directory Filters</h3>
 			<ul>
-				<li><%= link_to 'Health &amp; Beauty', 'javascript:void(0);', :class=>'active' %></li>
-				<li><%= link_to 'Cuisine', 'javascript:void(0);'%></li>
-				<li><%= link_to 'Fashion', 'javascript:void(0);'%></li>
-				<li><%= link_to 'Services', 'javascript:void(0);'%></li>
-				<li><%= link_to 'Offices', 'javascript:void(0);'%></li>
+				<li>
+					<% link_to 'javascript:void(0);', :class=>'active'  do %>
+						<span>
+							Health &amp; Beauty
+						</span>
+					<% end %>
+				</li>
+				<li>
+					<% link_to 'javascript:void(0);' do %>
+						<span>
+							Cuisine
+						</span>
+					<% end %>
+				</li>
+				<li>
+					<% link_to 'javascript:void(0);' do %>
+						<span>	
+							Fashion
+						</span>
+					<% end %>
+				</li>
+				<li>
+					<% link_to 'javascript:void(0);' do %>
+						<span>
+							Services
+						</span>
+					<% end %>
+				</li>
+				<li>
+					<% link_to 'javascript:void(0);' do %>
+						<span>
+							Offices
+						</span>
+					<% end %>
+				</li>
 			</ul>
 		</div>
 		<div class="col-xs-12 col-sm-8 col-md-9">
+			<!--
 			<ul class="l-horizontal-tabs">
 				<li><%= link_to 'Information', 'javascript:void(0)', :class=>'active' %></li>
 				<li><%= link_to 'Sales', 'javascript:void(0)' %></li>
 				<li><%= link_to 'Coupons', 'javascript:void(0)' %></li>
 				<li><%= link_to 'Specials', 'javascript:void(0)' %></li>
 			</ul>
+			-->
 			<a href="javascript:void(0);" class="m-client u-clearfix">
 				<%= image_tag 'http://placehold.it/240x150' %>
 				<section class="m-client-body">
