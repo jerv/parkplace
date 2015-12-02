@@ -3553,22 +3553,20 @@ h2.u-quote {
   font-weight: 200;
   color: #fff;
   margin: 0 auto;
-  max-width: 720px;
+  max-width: 840px;
   padding: 0 35px;
   position: relative;
   display: block; }
   /* line 41, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   h2.u-quote i {
-    position: absolute;
-    top: 0;
     font-size: 24px;
     font-weight: normal; }
-    /* line 46, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+    /* line 44, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
     h2.u-quote i:first-of-type {
-      left: 0; }
-    /* line 49, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+      margin-right: 10px; }
+    /* line 47, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
     h2.u-quote i:last-of-type {
-      right: 0; }
+      margin-left: 10px; }
 
 /* line 1, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
 nav {
@@ -3659,80 +3657,98 @@ nav {
       /* line 83, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
       nav .upper ul li > a {
         font-family: "Old Standard TT", serif; }
-      /* line 87, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+      /* line 86, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+      nav .upper ul li.social {
+        display: inline-block;
+        margin-right: 3px; }
+      /* line 91, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
       nav .upper ul a {
         color: inherit; }
-        /* line 89, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+        /* line 93, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
         nav .upper ul a:hover {
-          text-decoration: none;
-          opacity: 0.8; }
+          text-decoration: none; }
   @media (min-width: 991px) {
-    /* line 1, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
-    nav {
-      line-height: 65px; }
-      /* line 98, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
-      nav .upper {
+    /* line 100, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+    nav .upper {
+      height: 65px; }
+      /* line 102, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+      nav .upper a.site-id {
+        margin: 0;
+        position: relative;
+        top: 12px;
+        left: auto; }
+        /* line 107, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+        nav .upper a.site-id h2 {
+          font-size: 22px; }
+      /* line 111, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+      nav .upper ul.main > li {
         height: 65px; }
-        /* line 100, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
-        nav .upper a.site-id {
-          margin: 0;
-          position: relative;
-          left: auto; }
-          /* line 104, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
-          nav .upper a.site-id h2 {
-            font-size: 22px; }
-        /* line 108, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
-        nav .upper ul {
-          display: block;
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 100%;
-          text-align: right; }
-          /* line 115, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
-          nav .upper ul li {
-            display: inline-block; }
-            /* line 117, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
-            nav .upper ul li:hover ul {
-              display: block; }
-            /* line 120, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
-            nav .upper ul li ul {
-              display: none;
+        /* line 113, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+        nav .upper ul.main > li:hover > a {
+          border-bottom: 2px solid #BF1D1D; }
+        /* line 116, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+        nav .upper ul.main > li.social {
+          font-size: 24px;
+          display: inline-block;
+          margin: 0; }
+          /* line 120, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+          nav .upper ul.main > li.social a {
+            padding: 0 5px; }
+          /* line 123, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+          nav .upper ul.main > li.social:hover a {
+            border-bottom: 2px solid #BF1D1D; }
+      /* line 128, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+      nav .upper ul {
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: 0;
+        width: 100%;
+        text-align: right; }
+        /* line 135, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+        nav .upper ul li {
+          display: inline-block; }
+          /* line 137, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+          nav .upper ul li:hover ul {
+            display: block; }
+          /* line 140, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+          nav .upper ul li ul {
+            display: none;
+            position: absolute;
+            top: 53px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            line-height: 30px; }
+            /* line 148, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+            nav .upper ul li ul:before {
+              content: "";
+              display: block;
+              background-color: rgba(191, 29, 29, 0.8);
+              width: 300%;
+              height: 28px;
               position: absolute;
-              top: 66px;
-              left: 0;
-              width: 100%;
-              text-align: center;
-              line-height: 26px; }
-              /* line 128, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
-              nav .upper ul li ul:before {
-                content: "";
-                display: block;
-                background-color: rgba(191, 29, 29, 0.8);
-                width: 300%;
-                height: 28px;
-                position: absolute;
-                bottom: 0;
-                left: -150%; }
-              /* line 138, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
-              nav .upper ul li ul a {
-                font-family: "Josefin Sans", sans-serif;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 14px;
-                position: relative;
-                z-index: 2; }
-          /* line 148, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
-          nav .upper ul a {
-            display: block;
-            padding: 0 15px; } }
+              top: 0;
+              left: -150%; }
+            /* line 158, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+            nav .upper ul li ul a {
+              font-family: "Josefin Sans", sans-serif;
+              font-style: normal;
+              font-weight: 300;
+              font-size: 14px;
+              position: relative;
+              z-index: 2; }
+        /* line 168, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+        nav .upper ul a {
+          display: block;
+          padding: 0 15px; } }
 
 @media (max-width: 990px) {
-  /* line 157, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+  /* line 177, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
   body.open .nav-trigger {
     background-color: rgba(250, 250, 250, 0.2); }
 
-  /* line 160, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+  /* line 180, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
   .mobile-table {
     display: table;
     width: 100%;
@@ -3744,28 +3760,28 @@ nav {
     z-index: 9001;
     transition: all 0.2s ease-out; }
 
-  /* line 171, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+  /* line 191, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
   body.open .mobile-table {
     left: 0; }
 
-  /* line 174, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+  /* line 194, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
   nav .upper ul {
     display: table-cell;
     vertical-align: middle;
     text-align: center; }
-    /* line 179, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+    /* line 199, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
     nav .upper ul li ul {
       display: none; }
-    /* line 183, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+    /* line 203, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
     nav .upper ul a {
       color: #333;
       display: block; }
-      /* line 186, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+      /* line 206, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
       nav .upper ul a:active {
         color: #BF1D1D;
         background-color: rgba(0, 0, 0, 0.2); }
 
-  /* line 192, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
+  /* line 212, /Users/chief/work/parkplace/source/stylesheets/layouts/_nav.scss */
   nav .upper ul li > a {
     font-family: "Josefin Sans", sans-serif; } }
 /* line 1, /Users/chief/work/parkplace/source/stylesheets/layouts/_footer.scss */
@@ -3919,16 +3935,22 @@ footer {
     position: relative;
     z-index: 2;
     max-width: 720px;
-    margin: 0 auto;
-    padding: 25px 0; }
-  /* line 97, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+    margin-bottom: 25px;
+    margin: 45px auto 15px auto; }
+    /* line 96, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+    .l-home-splash-3 p:last-of-type {
+      margin-bottom: 45px; }
+  /* line 100, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
   .l-home-splash-3 .red {
     position: relative;
     z-index: 3;
     color: #fff;
     padding: 15px 0;
     background-color: rgba(191, 29, 29, 0.8); }
-    /* line 103, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+    /* line 106, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
+    .l-home-splash-3 .red p {
+      margin: 15px auto; }
+    /* line 109, /Users/chief/work/parkplace/source/stylesheets/layouts/_home.scss */
     .l-home-splash-3 .red .u-button {
       margin: 15px auto; }
 
@@ -3958,55 +3980,58 @@ footer {
     text-align: center;
     font-weight: 300;
     font-size: 16px;
-    height: 40px;
-    line-height: 45px;
+    padding: 10px 0;
     color: #B49C79; }
-    /* line 29, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+    /* line 28, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
     .l-filters ul a:hover, .l-filters ul a:active {
       box-shadow: 0 0 0 1px #a5895f inset;
       color: #a5895f;
       text-decoration: none; }
-    /* line 34, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+    /* line 33, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
     .l-filters ul a.active {
       color: #fff;
       background-color: #B49C79; }
-      /* line 37, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+      /* line 36, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+      .l-filters ul a.active span {
+        border-bottom: 2px solid #BF1D1D;
+        padding-bottom: 3px; }
+      /* line 40, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
       .l-filters ul a.active:hover {
         color: #fff; }
 
-/* line 45, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+/* line 48, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
 .l-horizontal-tabs {
   list-style-type: none;
   padding: 0 0 20px 0;
   margin: 0 0 25px 0; }
-  /* line 49, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+  /* line 52, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
   .l-horizontal-tabs li {
     display: block;
     margin-bottom: 5px; }
-    /* line 52, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+    /* line 55, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
     .l-horizontal-tabs li a {
       font-size: 24px;
       display: block;
       color: #777;
       line-height: 1.1;
       font-family: "Old Standard TT", serif; }
-      /* line 58, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+      /* line 61, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
       .l-horizontal-tabs li a:hover, .l-horizontal-tabs li a:active, .l-horizontal-tabs li a:focus {
         text-decoration: none;
         color: #BF1D1D; }
-      /* line 62, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+      /* line 65, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
       .l-horizontal-tabs li a.active {
         color: #BF1D1D; }
   @media (min-width: 600px) {
-    /* line 45, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+    /* line 48, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
     .l-horizontal-tabs {
       border-bottom: 1px solid #BF1D1D; }
-      /* line 69, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+      /* line 72, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
       .l-horizontal-tabs li {
         display: inline-block;
         margin: 0 10px 0 0; } }
 
-/* line 76, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+/* line 79, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
 .m-client {
   padding: 15px;
   border: 1px solid #ccc;
@@ -4016,35 +4041,35 @@ footer {
   color: #333;
   position: relative;
   margin: 0 0 15px 0; }
-  /* line 85, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+  /* line 88, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
   .m-client:hover {
     border-color: #BF1D1D;
     text-decoration: none;
     color: #333; }
-    /* line 89, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+    /* line 92, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
     .m-client:hover img {
       border-color: #BF1D1D; }
-    /* line 92, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+    /* line 95, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
     .m-client:hover i {
       color: #BF1D1D; }
-    /* line 95, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+    /* line 98, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
     .m-client:hover .m-client-body:before {
       background-color: #BF1D1D; }
-  /* line 99, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+  /* line 102, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
   .m-client img {
     width: 100%;
     padding-bottom: 20px;
     border-bottom: 1px solid #ccc; }
-  /* line 104, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+  /* line 107, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
   .m-client h5 {
     font-size: 18px;
     margin: 20px 0 10px 0;
     color: inherit; }
-  /* line 109, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+  /* line 112, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
   .m-client p {
     font-weight: 200;
     color: #777; }
-  /* line 113, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+  /* line 116, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
   .m-client ul {
     list-style-type: none;
     font-weight: 200;
@@ -4053,25 +4078,25 @@ footer {
     line-height: 2;
     margin: 0;
     color: #777; }
-  /* line 122, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+  /* line 125, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
   .m-client i {
     font-size: 18px;
     padding-right: 5px;
     transition: all 0.2s ease-out; }
   @media (min-width: 991px) {
-    /* line 128, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+    /* line 131, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
     .m-client img {
       border: none;
       padding: 0 25px 0 0;
       width: 25%;
       display: inline-block;
       float: left; }
-    /* line 135, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+    /* line 138, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
     .m-client .m-client-body {
       width: 75%;
       display: inline-block;
       float: left; }
-      /* line 139, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+      /* line 142, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
       .m-client .m-client-body:before {
         height: 100%;
         content: "";
@@ -4083,14 +4108,14 @@ footer {
         z-index: 2;
         background-color: #ccc;
         transition: all 0.2s ease-out; }
-    /* line 152, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+    /* line 155, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
     .m-client h5 {
       margin: 0 0 5px 0;
       font-weight: bold; }
-    /* line 156, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+    /* line 159, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
     .m-client ul {
       line-height: 1; }
-      /* line 158, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
+      /* line 161, /Users/chief/work/parkplace/source/stylesheets/layouts/_directory.scss */
       .m-client ul li {
         display: inline-block; } }
 
@@ -4234,8 +4259,9 @@ footer {
   background-size: 100% auto;
   background-position: 50%;
   position: relative;
-  overflow: hidden; }
-  /* line 11, /Users/chief/work/parkplace/source/stylesheets/layouts/_location.scss */
+  overflow: hidden;
+  text-align: center; }
+  /* line 12, /Users/chief/work/parkplace/source/stylesheets/layouts/_location.scss */
   .l-location-hero .container {
     position: relative;
     z-index: 2; }
@@ -4244,33 +4270,33 @@ footer {
     .l-location-hero {
       padding: 105px 0 40px 0; } }
 
-/* line 21, /Users/chief/work/parkplace/source/stylesheets/layouts/_location.scss */
+/* line 22, /Users/chief/work/parkplace/source/stylesheets/layouts/_location.scss */
 .l-location-body h3 {
   line-height: 1.4; }
 
 /* BASE RULES */
-/* line 59, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+/* line 57, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
 body {
   font-family: "Josefin Sans", sans-serif; }
 
-/* line 63, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+/* line 61, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
 p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5; }
 
-/* line 69, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+/* line 67, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Old Standard TT", serif; }
-  /* line 71, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 69, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   h1.red, h2.red, h3.red, h4.red, h5.red {
     color: #BF1D1D; }
-  /* line 74, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 72, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   h1.brown, h2.brown, h3.brown, h4.brown, h5.brown {
     color: #735821; }
 
 /* UTILITIES */
-/* line 81, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+/* line 79, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
 .u-clearfix:after {
   visibility: hidden;
   display: block;
@@ -4279,32 +4305,32 @@ h1, h2, h3, h4, h5 {
   clear: both;
   height: 0; }
 
-/* line 89, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+/* line 87, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
 .u-clearfix {
   display: inline-block; }
 
 /* start commented backslash hack \*/
-/* line 91, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+/* line 89, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
 * html .u-clearfix {
   height: 1%; }
 
-/* line 92, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+/* line 90, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
 .u-clearfix {
   display: block; }
 
 /* close commented backslash hack */
-/* line 95, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+/* line 93, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
 .u-cta {
   text-align: center; }
-  /* line 97, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 95, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-cta p {
     margin: 0 auto 20px auto;
     max-width: 620px; }
-  /* line 101, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 99, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-cta h3 {
     margin-bottom: 30px; }
 
-/* line 106, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+/* line 104, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
 .u-screen {
   background-color: rgba(0, 0, 0, 0.5);
   display: block;
@@ -4313,20 +4339,20 @@ h1, h2, h3, h4, h5 {
   left: 0;
   width: 100%;
   height: 100%; }
-  /* line 114, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 112, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-screen.brown {
     background-color: #8D5A19;
     opacity: 0.8; }
-  /* line 118, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 116, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-screen.white {
     background-color: #fff;
     opacity: 0.9; }
-  /* line 122, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 120, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-screen.red {
     opacity: 0.8;
     background-color: #BF1D1D; }
 
-/* line 128, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+/* line 126, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
 .u-button {
   display: inline-block;
   cursor: pointer;
@@ -4342,62 +4368,62 @@ h1, h2, h3, h4, h5 {
   background-color: #292828;
   transition: all 0.2s ease-out;
   border-radius: 3px; }
-  /* line 143, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 141, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-button.block {
     display: block;
     margin: 0 auto 10px auto;
     width: 100%;
     max-width: 240px; }
-  /* line 149, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 147, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-button:hover {
     color: #fff;
     text-decoration: none;
     background-color: #363535; }
-  /* line 154, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 152, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-button:active {
     text-decoration: none; }
-  /* line 157, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 155, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-button.red {
     background-color: #BF1D1D; }
-    /* line 159, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+    /* line 157, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
     .u-button.red:hover {
       background-color: #d52020; }
-    /* line 162, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+    /* line 160, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
     .u-button.red.trans {
       background: none;
       font-weight: bold;
       color: #BF1D1D;
       box-shadow: 0 0 0 2px #BF1D1D inset; }
-      /* line 167, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+      /* line 165, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
       .u-button.red.trans:hover {
         background-color: rgba(250, 250, 250, 0.6);
         box-shadow: 0 0 0 2px #d52020 inset; }
-  /* line 173, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 171, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-button.brown {
     background-color: #735821; }
-    /* line 175, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+    /* line 173, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
     .u-button.brown:hover {
       background-color: #876727; }
-    /* line 178, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+    /* line 176, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
     .u-button.brown.trans {
       background: none;
       font-weight: bold;
       color: #735821;
       box-shadow: 0 0 0 2px #735821 inset; }
-      /* line 183, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+      /* line 181, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
       .u-button.brown.trans:hover {
         background-color: rgba(250, 250, 250, 0.6);
         box-shadow: 0 0 0 2px #876727 inset; }
-  /* line 189, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 187, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-button.trans-white {
     color: #fff;
     background: none;
     box-shadow: 0 0 0 2px #fff inset; }
-    /* line 193, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+    /* line 191, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
     .u-button.trans-white:hover {
       background-color: rgba(250, 250, 250, 0.2); }
 
-/* line 199, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+/* line 197, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
 .u-box {
   text-align: center;
   color: #735821;
@@ -4409,40 +4435,40 @@ h1, h2, h3, h4, h5 {
   position: relative;
   overflow: hidden;
   margin-bottom: 25px; }
-  /* line 210, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 208, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-box h3 {
     margin-top: 35px; }
-  /* line 213, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 211, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-box .u-button {
     margin-bottom: 35px; }
-  /* line 216, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 214, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-box .box-content {
     display: table-cell;
     vertical-align: middle;
     position: relative;
     z-index: 2; }
-  /* line 222, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 220, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-box.box-bg-1 {
     color: #fff;
     background: url("../images/merch.jpg"); }
-  /* line 226, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 224, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-box.box-bg-2 {
     color: #fff;
     background: url("../images/box-2.jpg"); }
-  /* line 230, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 228, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-box.box-red {
     border-color: #BF1D1D; }
-    /* line 232, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+    /* line 230, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
     .u-box.box-red h3 {
       color: #BF1D1D; }
-  /* line 236, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+  /* line 234, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
   .u-box.box-brown {
     border-color: #735821; }
-    /* line 238, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+    /* line 236, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
     .u-box.box-brown h3 {
       color: #735821; }
   @media (min-width: 992px) {
-    /* line 199, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
+    /* line 197, /Users/chief/work/parkplace/source/stylesheets/_app.scss */
     .u-box {
       margin-bottom: 0; } }
 /*
